@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane onKeyReleased="#f1Keys" prefHeight="720.0" prefWidth="1280.0" stylesheets="@../css/pos.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tps.POSController">
+   <children>
+      <BorderPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <AnchorPane prefHeight="11.0" prefWidth="1280.0" styleClass="logoBG" BorderPane.alignment="CENTER">
+               <children>
+                  <AnchorPane prefHeight="62.0" prefWidth="1280.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Label layoutX="84.0" layoutY="3.0" style="-fx-font-size: 18;" text="POS System" />
+                        <Label fx:id="cashier_name" layoutX="84.0" layoutY="27.0" style="-fx-font-size: 18;" text="Carlo | Cashier" />
+                        <Label fx:id="total_amount" alignment="BASELINE_RIGHT" layoutX="1058.0" layoutY="3.0" prefHeight="47.0" prefWidth="182.0" style="-fx-font-size: 40; -fx-font-weight: bold;" text="0.00" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </top>
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <AnchorPane prefHeight="536.0" prefWidth="1016.0">
+                     <children>
+                        <Label alignment="BASELINE_LEFT" layoutX="84.0" layoutY="14.0" style="-fx-font-size: 14;" text="TRANSACTION NO." />
+                        <Label fx:id="trans_no" alignment="BASELINE_LEFT" layoutX="252.0" layoutY="14.0" style="-fx-font-size: 14;" text="2020103226" />
+                        <Label layoutX="84.0" layoutY="37.0" style="-fx-font-size: 14;" text="TRANSACTION DATE" />
+                        <Label fx:id="trans_date" alignment="BASELINE_LEFT" layoutX="252.0" layoutY="37.0" style="-fx-font-size: 14;" text="Friday, May 11, 2023" />
+                        <Label layoutX="84.0" layoutY="69.0" style="-fx-font-size: 14;" text="[F8] Barcode" />
+                        <TextField fx:id="search_bar" layoutX="252.0" layoutY="63.0" onKeyReleased="#enterSearch" prefHeight="28.0" prefWidth="544.0" promptText="Enter barcode" />
+                        <TableView fx:id="cart" layoutX="144.0" layoutY="97.0" prefHeight="443.0" prefWidth="1016.0" AnchorPane.bottomAnchor="-4.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="97.0">
+                          <columns>
+                            <TableColumn fx:id="cart_index" prefWidth="64.53332877159119" text="#" />
+                            <TableColumn fx:id="cart_description" prefWidth="501.86669158935547" text="Description" />
+                              <TableColumn fx:id="cart_price" prefWidth="115.20001220703125" text="Price" />
+                              <TableColumn fx:id="cart_quantity" prefWidth="106.93328857421875" text="Quantity" />
+                              <TableColumn fx:id="cart_total" prefWidth="141.06671142578125" text="Total" />
+                              <TableColumn fx:id="cart_increase" maxWidth="27.0" prefWidth="27.0" />
+                              <TableColumn fx:id="cart_decrese" maxWidth="27.0" prefWidth="27.0" />
+                              <TableColumn fx:id="cart_delete" maxWidth="27.0" prefWidth="27.0" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </center>
+         <right>
+            <AnchorPane prefHeight="665.0" prefWidth="262.0" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox alignment="TOP_CENTER" prefHeight="534.0" prefWidth="208.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <children>
+                        <Button fx:id="btnF1" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#newTransaction" prefHeight="54.0" prefWidth="262.0" styleClass="btnMenu" text="[F1] New Transaction" />
+                        <Button fx:id="btnF2" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#searchProduct" prefHeight="54.0" prefWidth="262.0" styleClass="btnMenu" text="[F2] Search Product" />
+                        <Button fx:id="btnF3" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#settlePayment" prefHeight="54.0" prefWidth="262.0" styleClass="btnMenu" text="[F3] Settle Payment" />
+                        <Button fx:id="btnF4" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#clearSales" prefHeight="54.0" prefWidth="262.0" styleClass="btnMenu" text="[F4] Clear Cart" />
+                        <Button fx:id="btnF5" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#dailySales" prefHeight="54.0" prefWidth="262.0" styleClass="btnMenu" text="[F5] Daily Sales" />
+                        <Button fx:id="btnF6" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#changePass" prefHeight="54.0" prefWidth="262.0" styleClass="btnMenu" text="[F6] Change Password" />
+                        <Button fx:id="btnF10" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#logout" prefHeight="54.0" prefWidth="262.0" styleClass="btnMenu" text="[F10] LOGOUT" />
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </right>
+         <bottom>
+            <AnchorPane prefHeight="130.0" prefWidth="1280.0" BorderPane.alignment="CENTER">
+               <children>
+                  <AnchorPane layoutX="-2.0" layoutY="7.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="-7.0" AnchorPane.leftAnchor="-2.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="7.0">
+                     <children>
+                        <Label fx:id="current_time" layoutX="163.0" layoutY="17.0" style="-fx-font-size: 80; -fx-background-color: #fbc4ab;" text="11:59:59 PM" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <padding>
+                              <Insets left="10.0" right="10.0" />
+                           </padding>
+                        </Label>
+                        <Label fx:id="current_date" layoutX="6.0" layoutY="100.0" style="-fx-font-size: 20; -fx-background-color: #fbc4ab;" text="Sunday, May 14, 2023">
+                           <padding>
+                              <Insets left="10.0" right="10.0" />
+                           </padding>
+                        </Label>
+                        <Label alignment="BASELINE_LEFT" layoutX="721.0" layoutY="16.0" prefHeight="16.0" prefWidth="137.0" style="-fx-font-size: 16;" text="SALES TOTAL" />
+                        <Label fx:id="total_amount2" alignment="BASELINE_RIGHT" layoutX="863.0" layoutY="15.0" nodeOrientation="LEFT_TO_RIGHT" prefWidth="150.0" style="-fx-font-size: 16;" text="0.00" textAlignment="RIGHT" />
+                        <Label alignment="BASELINE_LEFT" layoutX="720.0" layoutY="37.0" prefHeight="16.0" prefWidth="137.0" style="-fx-font-size: 16;" text="VAT" />
+                        <Label fx:id="total_vat" alignment="BASELINE_RIGHT" layoutX="862.0" layoutY="36.0" nodeOrientation="LEFT_TO_RIGHT" prefWidth="150.0" style="-fx-font-size: 16;" text="0.00" textAlignment="RIGHT" />
+                        <Label alignment="BASELINE_LEFT" layoutX="720.0" layoutY="61.0" prefHeight="16.0" prefWidth="137.0" style="-fx-font-size: 16;" text="VATABLE" />
+                        <Label fx:id="total_vatable" alignment="BASELINE_RIGHT" layoutX="862.0" layoutY="60.0" nodeOrientation="LEFT_TO_RIGHT" prefWidth="150.0" style="-fx-font-size: 16;" text="0.00" textAlignment="RIGHT" />
+                     </children></AnchorPane>
+               </children>
+            </AnchorPane>
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>

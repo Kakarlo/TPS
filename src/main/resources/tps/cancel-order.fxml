@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="471.0" prefWidth="914.0" styleClass="root" stylesheets="@../css/pos.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tps.CancelOrderController">
+   <children>
+      <AnchorPane prefHeight="34.0" prefWidth="307.0" styleClass="logoBG" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button fx:id="btnClose" layoutX="875.0" layoutY="6.0" mnemonicParsing="false" onAction="#close" styleClass="btnClose" text="X" />
+            <Label layoutX="17.0" layoutY="5.0" styleClass="header" text="Cancel Order" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="37.0" layoutY="55.0" style="-fx-font-weight: bold;" styleClass="bodyTxt" text="Sold Item" textFill="#ff7070" />
+      <Label layoutX="37.0" layoutY="86.0" styleClass="bodyTxt" text="ID" />
+      <TextField fx:id="tfID" alignment="BASELINE_LEFT" disable="true" layoutX="205.0" layoutY="80.0" prefHeight="31.0" prefWidth="252.0" style="-fx-font-size: 16;" text="0" />
+      <Label layoutX="36.0" layoutY="118.0" styleClass="bodyTxt" text="Production Code" />
+      <TextField fx:id="tfPcode" alignment="BASELINE_LEFT" disable="true" layoutX="205.0" layoutY="118.0" prefHeight="31.0" prefWidth="252.0" style="-fx-font-size: 16;" text="0" />
+      <Label layoutX="37.0" layoutY="156.0" styleClass="bodyTxt" text="Description" />
+      <TextField fx:id="tfDesc" alignment="TOP_LEFT" disable="true" layoutX="205.0" layoutY="156.0" prefHeight="77.0" prefWidth="252.0" style="-fx-font-size: 16;" text="0" />
+      <Label layoutX="466.0" layoutY="85.0" styleClass="bodyTxt" text="Transaction" />
+      <TextField fx:id="tfTrans" alignment="BASELINE_LEFT" disable="true" layoutX="634.0" layoutY="79.0" prefHeight="31.0" prefWidth="252.0" style="-fx-font-size: 16;" text="0" />
+      <Label layoutX="467.0" layoutY="123.0" styleClass="bodyTxt" text="Price" />
+      <TextField fx:id="tfPrice" alignment="BASELINE_LEFT" disable="true" layoutX="634.0" layoutY="117.0" prefHeight="31.0" prefWidth="252.0" style="-fx-font-size: 16;" text="0" />
+      <Label layoutX="466.0" layoutY="158.0" styleClass="bodyTxt" text="Quantity" />
+      <TextField fx:id="tfQty" alignment="TOP_LEFT" disable="true" layoutX="634.0" layoutY="155.0" prefHeight="34.0" prefWidth="252.0" style="-fx-font-size: 16;" text="0" />
+      <Label layoutX="37.0" layoutY="251.0" style="-fx-font-weight: bold;" styleClass="bodyTxt" text="Cancel Item" textFill="#ff7070" />
+      <Label layoutX="38.0" layoutY="291.0" styleClass="bodyTxt" text="Add to Inventory" />
+      <ComboBox fx:id="cboAdd" layoutX="205.0" layoutY="285.0" prefHeight="31.0" prefWidth="252.0" styleClass="btnMenu" />
+      <Label layoutX="466.0" layoutY="291.0" styleClass="bodyTxt" text="Cancel Qty" />
+      <TextField fx:id="tfCancel" alignment="BASELINE_RIGHT" layoutX="634.0" layoutY="285.0" prefHeight="31.0" prefWidth="252.0" style="-fx-font-size: 16;" text="0" />
+      <Label layoutX="466.0" layoutY="325.0" styleClass="bodyTxt" text="Reasons" />
+      <TextField fx:id="tfReasons" alignment="TOP_LEFT" layoutX="634.0" layoutY="325.0" prefHeight="77.0" prefWidth="252.0" promptText="Enter reasons" style="-fx-font-size: 16;" />
+      <Button fx:id="btnCancel" layoutX="678.0" layoutY="421.0" mnemonicParsing="false" onAction="#cancelOrder" prefHeight="36.0" prefWidth="207.0" style="-fx-font-size: 20;" styleClass="btn2" text="Cancel Order" />
+      <Label layoutX="466.0" layoutY="194.0" styleClass="bodyTxt" text="Total" />
+      <TextField fx:id="tfTotal" alignment="TOP_LEFT" disable="true" layoutX="634.0" layoutY="194.0" prefHeight="34.0" prefWidth="252.0" style="-fx-font-size: 16;" text="0" />
+   </children>
+</AnchorPane>

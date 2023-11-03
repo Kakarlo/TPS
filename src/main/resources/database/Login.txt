@@ -1,0 +1,7 @@
+hey1#what are you#doing
+hey2#what are you#doing
+hey3#what are you#doing
+hey4#what are you#doing
+admin#pass123#Admin
+cash#123#Cashier
+Carlo#asdf#Cashier

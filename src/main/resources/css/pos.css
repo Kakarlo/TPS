@@ -1,0 +1,61 @@
+.root{
+    -fx-font-family: "Arial"
+}
+
+.btnMenu{
+    -fx-background-radius: 0;
+        -fx-background-color: #fbc4ab;
+    -fx-font-size:16;
+}
+
+.btnMenu:hover{
+    -fx-background-color: #f08080;
+    -fx-font-color: "";
+}
+
+.logoBG {
+  -fx-background-color: linear-gradient(
+    to bottom right,
+    #FFAD8F,
+    #FF7070
+  );
+}
+
+.btn1{
+    -fx-background-color: #BB646B;
+    -fx-font-size: 30;
+    -fx-text-fill: white;
+}
+
+.btn1:hover{
+    -fx-background-color: #89454A;
+}
+
+.btn2{
+    -fx-background-color: #EDB8BC;
+    -fx-font-size: 30;
+}
+
+.btn2:hover{
+    -fx-background-color: #E1B2B5;
+}
+
+.btnClose{
+    -fx-background-color: #BB646B;
+    -fx-font-weight:bold;
+    -fx-text-fill: white;
+}
+
+.btnClose:hover{
+    -fx-background-color: #E1B2B5;
+}
+
+.header{
+    -fx-font-size: 20;
+    -fx-font-weight:bold;
+    -fx-text-fill: white;
+}
+
+.bodyTxt{
+    -fx-font-size: 16;
+}

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="196.0" prefWidth="307.0" styleClass="root" stylesheets="@../css/pos.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tps.ConfirmCancelController">
+   <children>
+      <TextField fx:id="user" layoutX="16.0" layoutY="55.0" prefHeight="34.0" prefWidth="274.0" promptText="Username" style="-fx-font-size: 14;" />
+      <PasswordField fx:id="pass" layoutX="16.0" layoutY="98.0" prefHeight="34.0" prefWidth="274.0" promptText="Password" style="-fx-font-size: 14;" />
+      <Button fx:id="btnVoid" layoutX="16.0" layoutY="145.0" mnemonicParsing="false" onAction="#login" prefHeight="34.0" prefWidth="274.0" style="-fx-font-size: 20;" styleClass="btn2" text="Void" />
+      <AnchorPane prefHeight="34.0" prefWidth="307.0" styleClass="logoBG" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button fx:id="btnClose" layoutX="272.0" layoutY="5.0" mnemonicParsing="false" onAction="#close" styleClass="btnClose" text="X" />
+            <Label layoutX="17.0" layoutY="5.0" styleClass="header" text="Confirm Cancelation" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="160.0" prefWidth="307.0" styleClass="root" stylesheets="@../css/pos.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tps.AddQuantityController">
+   <children>
+      <TextField fx:id="input" alignment="BASELINE_RIGHT" layoutX="16.0" layoutY="42.0" onKeyReleased="#enterQty" onKeyTyped="#limitQty" prefHeight="34.0" prefWidth="274.0" promptText="Qty" style="-fx-font-size: 60;" />
+      <AnchorPane prefHeight="34.0" prefWidth="307.0" styleClass="logoBG" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button fx:id="btnClose" layoutX="272.0" layoutY="5.0" mnemonicParsing="false" onAction="#close" styleClass="btnClose" text="X" />
+            <Label layoutX="17.0" layoutY="5.0" styleClass="header" text="Quantity" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

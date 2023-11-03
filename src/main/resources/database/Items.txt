@@ -1,0 +1,14 @@
+1#121#Denim Highwaist Shorts#Highwaist#150.0#0
+2#254#Highwaist Jeans#Highwaist#190.0#0
+3#346#Cotton Spandex#Spandex#90.0#2
+4#564#Denim Cargo Pants#Cargo Pants#250.0#31
+5#653#Denim Skinny Jeans#Skinny Jeans#100.0#25
+6#342#Wide Leg Baggy Pants#Baggy Pants#200.0#33
+7#2342#Square Neck Formal Maxi Linen Dress#Maxi Dress#239.0#13
+8#234#Basic Ribbed TShirt#TShirt#179.0#19
+9#656#Terno Short Unisex#Terno#91.0#37
+10#798#High-Waist Mom Jeans#Mom Jeans#275.0#66
+11#453#Puff Sleeves Blouse#Blouse#109.0#88
+12#347#Crop Top Blouse Vneck#Blouse#109.0#380
+13#556#Korean Cristine Blouse#Blouse#78.0#79
+14#743#Corset Puff Sleeves Dress#Corset Dress#276.0#58

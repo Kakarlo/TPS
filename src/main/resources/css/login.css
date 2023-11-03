@@ -1,0 +1,43 @@
+#button{
+    -fx-font-size:12;
+    -fx-font-color: "";
+    -fx-background-radius: 10;
+}
+
+.root{
+    -fx-background-color: #FFFFFF;
+    -fx-font-family: "Lucida Console"
+}
+
+.button {
+    -fx-background-radius: 0;
+}
+
+.rad {
+    -fx-background-radius: 0;
+}
+
+.btn1{
+    -fx-background-color: #BB646B;
+}
+
+.btn1:hover{
+    -fx-background-color: #89454A;
+}
+
+.btn2{
+    -fx-background-color: #EDB8BC;
+}
+
+.btn2:hover{
+    -fx-background-color: #E1B2B5;
+}
+
+.logoBG {
+  -fx-background-color: linear-gradient(
+    to bottom right,
+    #FFAD8F,
+    #FF7070
+  );
+  -fx-font-family: "Lucida Console";
+}

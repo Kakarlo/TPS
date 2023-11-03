@@ -1,0 +1,19 @@
+202305140004#1#121#Denim Highwaist Shorts#150.0#1#150.0#Yes#asda#cash
+202305140005#1#121#Denim Highwaist Shorts#150.0#41#6150.0#Yes#Ayoko sana#cash
+202305140006#1#121#Denim Highwaist Shorts#150.0#57#8550.0#Yes#Ayoko#cash
+202305140007#5#653#Denim Skinny Jeans#100.0#20#2000.0#No#Damaged#cash
+202305140003#2#254#Highwaist Jeans#190.0#1#190.0#No#wrong total#cash
+202305140007#1#121#Denim Highwaist Shorts#150.0#1#150.0#Yes#12#cash
+202305140008#1#121#Denim Highwaist Shorts#150.0#1#150.0#Yes#1#cash
+202305140008#1#121#Denim Highwaist Shorts#150.0#1#150.0#Yes#test#cash
+202305140009#2#254#Highwaist Jeans#190.0#12#2280.0#Yes#fake news#cash
+202305140004#1#121#Denim Highwaist Shorts#150.0#1#150.0#Yes#halakadoush#cash
+202305150003#12#346#Crop Top Blouse Vneck#109.0#500#54500.0#Yes#Wrong barcode#cash
+202305150008#8#234#Basic Ribbed TShirt#179.0#1#179.0#Yes#returned#cash
+202305150009#2#254#Highwaist Jeans#190.0#10#1900.0#Yes#Ayaw ko#cash
+202305150010#12#347#Crop Top Blouse Vneck#109.0#400#43600.0#Yes#dili ko#cash
+202305150011#2#254#Highwaist Jeans#190.0#180#34200.0#Yes#for da clout#cash
+202305150001#1#121#Denim Highwaist Shorts#150.0#2#300.0#No#Damaged#cash
+202305150006#12#346#Crop Top Blouse Vneck#109.0#500#54500.0#No#asdsa#cash
+202305160001#12#347#Crop Top Blouse Vneck#109.0#10#1090.0#Yes#return#cash
+202309250001#12#347#Crop Top Blouse Vneck#109.0#12#1308.0#Yes#damaged#cash
